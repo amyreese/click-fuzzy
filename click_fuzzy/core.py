@@ -16,13 +16,12 @@ class FuzzyCommandGroup(click.Group):
 
         if len(prefixes) == 1:
             cmd = prefixes[0]
-            click.echo(f"WARNING: Assuming {name!r} is short for {cmd!r}")
+            click.echo(f"Warning: Assuming {name!r} is short for {cmd!r}", err=True)
             return self.commands[cmd]
 
         elif prefixes:
             click.echo(
-                f"{ctx.info_name}: {name!r} is not a command. See --help\n\n"
-                "Similar commands:",
+                f"Error: {name!r} is not a command. See --help\n\n" "Similar commands:",
                 err=True,
             )
             for cmd in prefixes:
@@ -34,13 +33,12 @@ class FuzzyCommandGroup(click.Group):
 
         if len(candidates) == 1:
             _, cmd = candidates[0]
-            click.echo(f"WARNING: Assuming {name!r} is slang for {cmd!r}")
+            click.echo(f"Warning: Assuming {name!r} is slang for {cmd!r}", err=True)
             return self.commands[cmd]
 
         elif candidates:
             click.echo(
-                f"{ctx.info_name}: {name!r} is not a command. See --help\n\n"
-                "Similar commands:",
+                f"Error: {name!r} is not a command. See --help\n\n" "Similar commands:",
                 err=True,
             )
             for _, cmd in candidates:
