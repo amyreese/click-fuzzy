@@ -1,4 +1,4 @@
-# Click Fuzzy Commands
+# Fuzzy Commands for Click
 
 Fuzzy subcommand matching for click
 
@@ -25,4 +25,4 @@ import click_fuzzy
 License
 -------
 
-Click Fuzzy Commands is copyright Amethyst Reese, and licensed under the MIT license.
+Fuzzy Commands is copyright Amethyst Reese, and licensed under the MIT license.

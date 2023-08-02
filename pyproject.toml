@@ -11,7 +11,9 @@ authors = [
 license = {file="LICENSE"}
 dynamic = ["version", "description"]
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "click >= 8",
+]
 
 [project.optional-dependencies]
 dev = [
@@ -33,7 +35,7 @@ exclude = [
 ]
 
 [tool.attribution]
-name = "Click Fuzzy Commands"
+name = "Fuzzy Commands"
 package = "click_fuzzy"
 version_file = true
 ignored_authors = ["dependabot[bot]"]
