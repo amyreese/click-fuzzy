@@ -1,12 +1,14 @@
 # Copyright Amethyst Reese
 # Licensed under the MIT license
 
+from typing import List, Optional, Tuple
+
 import click
 import editdistance
 
 
 class FuzzyCommandGroup(click.Group):
-    def get_command(self, ctx: click.Context, name: str) -> click.Command | None:
+    def get_command(self, ctx: click.Context, name: str) -> Optional[click.Command]:
         if name in self.commands:
             return self.commands[name]
 
@@ -48,7 +50,7 @@ class FuzzyCommandGroup(click.Group):
         return None
 
     def resolve_command(
-        self, ctx: click.Context, args: list[str]
-    ) -> tuple[str | None, click.Command | None, list[str]]:
+        self, ctx: click.Context, args: List[str]
+    ) -> Tuple[Optional[str], Optional[click.Command], List[str]]:
         cmd_name, cmd, args = super().resolve_command(ctx, args)
         return cmd.name if cmd else cmd_name, cmd, args
