@@ -8,7 +8,7 @@ on:
   pull_request:
 
 jobs:
-  GITHUB_PROJECT:
+  click-fuzzy:
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false

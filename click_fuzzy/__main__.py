@@ -1,8 +1,8 @@
-# Copyright AUTHOR_NAME
+# Copyright Amethyst Reese
 # Licensed under the MIT license
 
 
-def main():
+def main() -> None:
     pass
 
 

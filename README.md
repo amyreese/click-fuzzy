@@ -1,16 +1,16 @@
-# PROJECT_NAME
+# Click Fuzzy Commands
 
-PROJECT_DESCRIPTION
+Fuzzy subcommand matching for click
 
-[![version](https://img.shields.io/pypi/v/PACKAGE_NORMALIZED.svg)](https://pypi.org/project/PACKAGE_NORMALIZED)
-[![license](https://img.shields.io/pypi/l/PACKAGE_NORMALIZED.svg)](https://github.com/GITHUB_USERNAME/GITHUB_PROJECT/blob/main/LICENSE)
+[![version](https://img.shields.io/pypi/v/click-fuzzy.svg)](https://pypi.org/project/click-fuzzy)
+[![license](https://img.shields.io/pypi/l/click-fuzzy.svg)](https://github.com/amyreese/click-fuzzy/blob/main/LICENSE)
 
 
 Install
 -------
 
 ```shell-session
-$ pip install PACKAGE_NORMALIZED
+$ pip install click-fuzzy
 ```
 
 
@@ -18,11 +18,11 @@ Usage
 -----
 
 ```py
-import PACKAGE_NAME
+import click_fuzzy
 ```
 
 
 License
 -------
 
-PROJECT_NAME is copyright AUTHOR_NAME, and licensed under the MIT license.
+Click Fuzzy Commands is copyright Amethyst Reese, and licensed under the MIT license.
