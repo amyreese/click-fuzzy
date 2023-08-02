@@ -24,9 +24,6 @@ dev = [
     "usort==1.0.6",
 ]
 
-[project.scripts]
-click-fuzzy = "click_fuzzy.__main__:main"
-
 [project.urls]
 Home = "https://github.com/amyreese/click-fuzzy"
 
