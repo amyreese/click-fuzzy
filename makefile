@@ -9,8 +9,8 @@ install:
 venv: .venv
 
 test:
-	python -m unittest -v click_fuzzy
-	python -m mypy -p click_fuzzy
+	python -m unittest -v click_fuzzy.tests
+	python -m mypy --non-interactive --install-types -p click_fuzzy
 
 lint:
 	python -m flake8 click_fuzzy

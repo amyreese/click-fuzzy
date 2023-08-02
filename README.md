@@ -6,6 +6,19 @@ Fuzzy subcommand matching for click
 [![license](https://img.shields.io/pypi/l/click-fuzzy.svg)](https://github.com/amyreese/click-fuzzy/blob/main/LICENSE)
 
 
+Allows use of automatic short aliases and matching small typos:
+
+```shell-session
+$ command h
+WARNING: Assuming 'h' is short for 'hello'
+Hello world!
+
+$ command helol
+WARNING: Assuming 'helol' is slang for 'hello'
+Hello world!
+```
+
+
 Install
 -------
 
@@ -18,8 +31,14 @@ Usage
 -----
 
 ```py
-import click_fuzzy
+from click_fuzzy import FuzzyCommandGroup
+
+@click.group(cls=FuzzyCommandGroup)
+def main(...):
+    ...
 ```
+
+That's it.
 
 
 License
