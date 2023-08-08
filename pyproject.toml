@@ -10,6 +10,9 @@ authors = [
 ]
 license = {file="LICENSE"}
 dynamic = ["version", "description"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+]
 requires-python = ">=3.8"
 dependencies = [
     "click >= 8",
