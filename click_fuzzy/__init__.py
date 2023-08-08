@@ -2,14 +2,22 @@
 # Licensed under the MIT license
 
 """
-Fuzzy subcommand matching for click
+Fuzzy command matching and aliases for click
 """
 
 from .__version__ import __version__
-from .core import FuzzyCommandGroup
+from .core import (
+    AliasedCommandGroup,
+    DuplicateAliasWarning,
+    FuzzyCommandGroup,
+    IgnoredAliasWarning,
+)
 
 __author__ = "Amethyst Reese"
 
 __all__ = [
+    "AliasedCommandGroup",
+    "DuplicateAliasWarning",
     "FuzzyCommandGroup",
+    "IgnoredAliasWarning",
 ]
